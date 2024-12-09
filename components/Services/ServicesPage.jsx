@@ -80,7 +80,7 @@ function ServicesPage() {
               </p>
             </div>
           </div>
-          <div className="flex flex-row items-center w-full h-auto justify-evenly mobile:flex-col mobile:justify-center mobile:gap-20">
+          <div className="flex flex-row items-center w-full h-auto justify-evenly mobile:flex-col mobile:justify-center mobile:gap-20 mobile:mt-4">
             <div className="w-[25%] tablet:w-[30%] hover:shadow-white/20 hover:shadow-xl hover:backdrop-blur-xl relative p-2 mobile:p-6 min-h-[18rem] mobile:min-h-[20rem] bg-white/10 backdrop-blur-lg rounded-xl shadow-lg shadow-white/10 flex justify-center gap-4 items-start flex-col mobile:w-full mobile:gap-6 mobile:items-start">
               <Image
                 src={shopping}
