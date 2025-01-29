@@ -32,18 +32,15 @@ function home() {
   // TODO: Create GSAP timeline instance for animations
   const tl = gsap.timeline();
 
-  // Explanation: Use a GSAP effect to animate the title on component mount
-  // useEffect(() => {
-  //   tl.from("h1", { y: 1000, duration: 1, opacity: 0 });
-  //   return () => {
-  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //   };
-  // }, ["h1"]);
-
   // TODO: Animate paragraph text with a GSAP effect on component mount
+
   useEffect(() => {
-    document.querySelector("h1").style.fontFamily = "Dancing Script";
-  }, []);
+    const h1 = document.querySelector("h1");
+    if (h1) {
+      h1.style.fontFamily = "Dancing Script";
+    }
+  }, []); // Empty array means this effect will run once on mount
+  
 
   return (
     <div className="flex items-center justify-center w-full h-auto">

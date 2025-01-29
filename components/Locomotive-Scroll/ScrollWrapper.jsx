@@ -9,7 +9,6 @@ const LocomotiveScroll = dynamic(() => import("locomotive-scroll"), {
 });
 
 const ScrollWrapper = ({ children }) => {
-  // Destructure children from props
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -18,25 +17,30 @@ const ScrollWrapper = ({ children }) => {
     if (typeof window !== "undefined" && LocomotiveScroll) {
       scroll = new LocomotiveScroll({
         el: scrollRef.current,
-        smooth: true,
-        smoothMobile: true,
-        multiplier: 1.5, // Adjust multiplier for smoother effect
-        inertia: 0.7, // Higher inertia for a more natural, fluid feel
-        class: "is-scroll",
-        lerp: 0.1, // Linear interpolation for smooth scrolling
-        scrollbarContainer: "#scrollbar-container", // Custom scrollbar container (optional)
-        getDirection: true, // Enable scroll direction change effect
+        smooth: true, // Enables smooth scrolling
+        smoothMobile: true, // Smooth scrolling on mobile
+        multiplier: 1.7, // Adjust multiplier for smoother scrolling
+        inertia: 0.8, // Higher inertia for a more fluid feel
+        class: "is-scroll", // Custom class for scroll elements (optional)
+        lerp: 0.1, // Linear interpolation for smooth scrolling transitions
+        getDirection: true, // Detect scroll direction for adding scroll animations
         smartphone: {
-          smooth: true, // Smooth scrolling on mobile devices
+          smooth: true, // Smooth scrolling for smartphone
         },
         tablet: {
-          smooth: true, // Smooth scrolling on tablet devices
+          smooth: true, // Smooth scrolling for tablets
         },
+        // Custom scrollbar container (optional)
+        scrollbarContainer: "#scrollbar-container", 
+        resetNativeScroll: true, // Reset native scroll to enhance custom scrolling
       });
     }
 
+    // Clean up the LocomotiveScroll instance on component unmount
     return () => {
-      scroll && scroll.destroy(); // Clean up LocomotiveScroll instance on unmount
+      if (scroll) {
+        scroll.destroy();
+      }
     };
   }, []);
 
