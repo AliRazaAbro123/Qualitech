@@ -66,7 +66,7 @@ function ContactPage() {
       <ToastContainer /> 
       {loading && <Loading />}
       <div
-      className={`w-full h-auto wide:h-screen py-6 flex justify-center items-center flex-col mobile:p-4 wide:w-[90rem] mobile:mb-2 ${
+      className={`w-full h-auto wide:h-screen py-6 flex justify-center items-center flex-col mobile:p-4 mobile:py-6 wide:w-[90rem] mobile:mb-2 ${
         loading ? "blur-sm pointer-events-none" : ""
       }`}
     >
@@ -120,7 +120,7 @@ function ContactPage() {
               Send Message
             </button>
           </form>
-          <div className="flex justify-center items-center gap-10 mobile:gap-10 flex-row mt-[-2rem]">
+          <div className="flex justify-center items-center gap-10 mobile:gap-10 flex-row mt-[1rem]">
             {/* Important: Facebook icon with custom style */}
             <h1 className="mr-2 text-lg font-semibold">Contact Me At :</h1>
             <Link

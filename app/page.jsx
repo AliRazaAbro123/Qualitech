@@ -5,10 +5,6 @@
   import ServicesHome from "@/components/Services/Home";
   import React from "react";
 
-  export const metadata = {
-    title: "Ali Raza | Home",
-  };
-
   function page() {
 
     return (

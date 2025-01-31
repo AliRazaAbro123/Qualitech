@@ -13,7 +13,7 @@ function Home() {
             Latest <span className="text-blue-700">Projects</span>
           </h1>
         </div>
-        <div className="flex flex-row py-4 items-center justify-center w-full h-auto gap-6 mobile:flex-col mobile:gap-12">
+        <div className="flex flex-row py-4 items-center justify-center w-full h-auto gap-12 mobile:flex-col mobile:gap-12">
           <div className="w-[28%] mobile:w-full h-auto flex justify-center items-start flex-col gap-2">
             <Image
               src={strugbits1}

@@ -40,7 +40,6 @@ function home() {
       h1.style.fontFamily = "Dancing Script";
     }
   }, []); // Empty array means this effect will run once on mount
-  
 
   return (
     <div className="flex items-center justify-center w-full h-auto">
@@ -121,8 +120,8 @@ function home() {
 
           {/* TODO: Download CV button */}
           <a
-            href="/Cv/AliRaza.pdf" // File path in the public directory
-            download="AliRaza-CV.pdf"
+            href="/Cv/Ali' Resume.pdf" // File path in the public directory
+            download="Ali' Resume.pdf"
             className="w-auto h-auto px-8 py-2 mt-1 font-semibold text-center no-underline bg-blue-700 rounded-md btn mobile:w-full mobile:py-3 mobile:mt-3"
           >
             Download CV
