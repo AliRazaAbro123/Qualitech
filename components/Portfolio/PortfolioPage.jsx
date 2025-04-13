@@ -29,7 +29,7 @@ import CustomCss from "@/components/CustomCss.css";
 function PortfolioPage() {
   return (
     <div className="flex items-center justify-center w-full h-auto">
-      <div className="w-full h-auto wide:h-screen flex justify-center gap-12 py-16 items-center flex-col mobile:p-4 mobile:py-20 wide:w-[90rem]">
+      <div className="w-full h-auto wide:h-auto flex justify-center gap-12 py-16 items-center flex-col mobile:p-4 mobile:py-20 wide:w-[90rem]">
         <div className="flex items-center justify-center w-full h-auto">
           <h1 className="text-4xl font-bold tracking-wider title tablet:text-3xl mobile:text-3xl">
             Latest <span className="text-blue-700">Projects</span>
@@ -139,7 +139,7 @@ function PortfolioPage() {
               src={calculator3}
               alt="Calculator"
               height={300}
-              width={300}
+              width={400}
               className="mobile:w-full rounded-lg mobile:rounded-sm"
             />
             <Image
@@ -161,19 +161,20 @@ function PortfolioPage() {
             </div>
             <div className="flex flex-col items-start justify-center w-1/2 mobile:w-full">
               <h1 className="text-2xl font-semibold tracking-wider text-blue-700 mobile:text-lg">
-                Background Changing
+                Dynamic Color Learning Tool
               </h1>
               <p className="text-sm text-gray-300">
-                A sleek and intuitive calculator application built with React
-                and Next.js, featuring a modern, responsive interface. Styled
-                with Tailwind CSS for a clean, minimalist design, it ensures
-                smooth functionality across all devices. The app delivers a
-                seamless, user-friendly experience, blending practicality with
-                aesthetics in a single, powerful tool.
+                This interactive educational tool helps students learn color
+                names in a fun and engaging way by changing the background
+                color. Users can select from a list of predefined colors or
+                input their own, with the background updating instantly. It
+                provides an immersive learning experience, helping students
+                better understand color theory and visual recognition in an
+                interactive, hands-on manner.
               </p>
               <h3 className="text-sm text-gray-300">
                 <span className="text-lg text-blue-700">Tech Stack : </span>
-                REACT - NEXT JS, TAILWIND CSS and MATERIAL UI
+                REACT - NEXT JS, STATE MANAGMENT PROCCES and TAILWIND CSS
               </h3>
               <Link
                 href={"https://bgclick.vercel.app/"}
@@ -221,16 +222,15 @@ function PortfolioPage() {
                 JotNow - Note Taking App
               </h1>
               <p className="text-sm text-gray-300">
-                A sleek and intuitive calculator application built with React
-                and Next.js, featuring a modern, responsive interface. Styled
-                with Tailwind CSS for a clean, minimalist design, it ensures
-                smooth functionality across all devices. The app delivers a
-                seamless, user-friendly experience, blending practicality with
-                aesthetics in a single, powerful tool.
+                JotNow is a clean, efficient note-taking app designed for
+                simplicity and speed. With a beautiful UI and smooth UX, it
+                allows users to quickly capture thoughts, tasks, and ideas. Its
+                responsive design ensures seamless use across devices, boosting
+                productivity and making note-taking easier anytime, anywhere.
               </p>
               <h3 className="text-sm text-gray-300">
                 <span className="text-lg text-blue-700">Tech Stack : </span>
-                REACT - NEXT JS, TAILWIND CSS and MATERIAL UI
+                EXPRESS JS, EJS, MONGOOSE, MONGODB, CSS, BCRYPT and JWT
               </h3>
               <Link
                 href={"https://jotnow.vercel.app/"}
@@ -275,15 +275,14 @@ function PortfolioPage() {
             </div>
             <div className="flex flex-col items-start justify-center w-1/2 mobile:w-full">
               <h1 className="text-2xl font-semibold tracking-wider text-blue-700 mobile:text-lg">
-                Background Changing
+                Arabical Calculator
               </h1>
               <p className="text-sm text-gray-300">
-                A sleek and intuitive calculator application built with React
-                and Next.js, featuring a modern, responsive interface. Styled
-                with Tailwind CSS for a clean, minimalist design, it ensures
-                smooth functionality across all devices. The app delivers a
-                seamless, user-friendly experience, blending practicality with
-                aesthetics in a single, powerful tool.
+                This modern calculator app, built with React and Next.js, is
+                designed for Arabic users with full right-to-left (RTL) support.
+                Featuring a clean, minimalist layout styled with Tailwind CSS,
+                it offers a seamless, intuitive experience across all devices,
+                perfect for both simple and complex calculations.
               </p>
               <h3 className="text-sm text-gray-300">
                 <span className="text-lg text-blue-700">Tech Stack : </span>
@@ -332,19 +331,18 @@ function PortfolioPage() {
             </div>
             <div className="flex flex-col items-start justify-center w-1/2 mobile:w-full">
               <h1 className="text-2xl font-semibold tracking-wider text-blue-700 mobile:text-lg">
-                Background Changing
+                I2p (Idea To Poduct)
               </h1>
               <p className="text-sm text-gray-300">
-                A sleek and intuitive calculator application built with React
-                and Next.js, featuring a modern, responsive interface. Styled
-                with Tailwind CSS for a clean, minimalist design, it ensures
-                smooth functionality across all devices. The app delivers a
-                seamless, user-friendly experience, blending practicality with
-                aesthetics in a single, powerful tool.
+                This fully responsive software house website clone, built with
+                React and Next.js, replicates a modern digital agency’s
+                structure and functionality. Featuring sections like services,
+                portfolio, and contact, it offers a sleek, user-friendly
+                interface styled with Tailwind CSS for a clean, modern look.
               </p>
               <h3 className="text-sm text-gray-300">
                 <span className="text-lg text-blue-700">Tech Stack : </span>
-                REACT - NEXT JS, TAILWIND CSS and MATERIAL UI
+                EXPRESS JS, EJS, CSS and GSAP FOR ANIMATIONS
               </h3>
               <Link
                 href={"https://i2product.vercel.app/"}

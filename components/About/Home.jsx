@@ -4,12 +4,12 @@ import CustomCss from "@/components/CustomCss.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
-import logo from "../../public/assets/logo.jpg"
+import logo from "../../public/assets/logo.jpg";
 import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutHome() {
-   const tl = gsap.timeline();
+  const tl = gsap.timeline();
 
   //  useEffect(() => {
   //   const ctx = gsap.context(() => {
@@ -49,12 +49,14 @@ function AboutHome() {
           </div>
           <div className="w-full h-auto flex justify-center items-start flex-col gap-3 mobile:items-center">
             <p className="text-gray-300 text-sm leading-normal tracking-wide">
-              I’m a passionate fullstack developer with expertise in the MERN
-              stack—MongoDB, Express.js, React.js, and Node.js. I focus on
-              creating scalable, efficient, and user-friendly web applications.
-              I’m always eager to learn, solve problems, and build meaningful
-              projects that make an impact. Let’s collaborate and bring your
-              ideas to life!
+              <span className="bg-gradient-to-r from-blue-800 to-blue-800 bg-[length:0%_100%] bg-no-repeat animate-bgFill text-white px-2">
+                With 4+ years of experience, I specialize in the MERN stack
+                (MongoDB, Express.js, React.js, Node.js)
+              </span>
+              to build responsive and scalable web applications. Passionate
+              about solving challenges, writing clean code, and staying
+              up-to-date with web development trends, I create user-centric
+              digital experiences. Let’s connect and build something amazing!
             </p>
             <Link
               href={"/about"}

@@ -52,7 +52,8 @@ function home() {
               <span className="bg-gradient-to-r from-blue-800 to-blue-800 bg-[length:0%_100%] bg-no-repeat animate-bgFill text-white px-2">
                 4+ years of hands-on experience in learning and building
                 real-world projects,
-              </span>{" "}
+              </span>
+              {""}
               I'm passionate about turning ideas into impactful digital
               experiences. Specializing in the MERN stack—MongoDB, Express.js,
               React.js, and Node.js—I develop responsive, scalable, and
@@ -76,10 +77,7 @@ function home() {
                 />
               </Link>
 
-              <Link
-                href={"https://www.instagram.com/ud.programming/"}
-                target="_blank"
-              >
+              <Link href={"https://www.fiverr.com/s/xX51gkl"} target="_blank">
                 <FontAwesomeIcon
                   icon={faLink}
                   beat

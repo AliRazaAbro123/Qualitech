@@ -2,12 +2,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* color: #ffffff; */
+  scrollbar-color: #007bff #ffffff;
+  scrollbar-width: thin;
 }
+
 body {
   font-family: "Poppins";
+}
+
+/* Global Scrollbar Style */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Vertical scrollbar width */
+  height: 12px;
+  /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* Track color - white */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  /* Scroll thumb color - blue */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+  /* Thumb hover color - darker blue */
 }
