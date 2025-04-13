@@ -93,7 +93,7 @@ function Header() {
           style={{ fontFamily: "Dancing Script" }}
         >
           <Link href={"/"}>
-            Ali <span className="text-blue-700 font-bold">Raza.</span>
+            Ali <span className="text-blue-700 font-bold">Stacker.</span>
           </Link>
         </Typography>
         <div className="hidden lg:block">

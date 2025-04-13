@@ -12,7 +12,6 @@ import laptop from "../../public/assets/laptop.svg";
 import Link from "next/link";
 
 function Home() {
-
   return (
     <div className="w-full h-auto flex justify-center bg-[#05010fee] items-center">
       <div className="w-full h-auto flex justify-center gap-24 py-12 items-center flex-col  mobile:p-4 wide:w-[90rem]">
