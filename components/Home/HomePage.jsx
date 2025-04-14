@@ -53,7 +53,6 @@ function home() {
                 4+ years of hands-on experience in learning and building
                 real-world projects,
               </span>
-              {""}
               I'm passionate about turning ideas into impactful digital
               experiences. Specializing in the MERN stack—MongoDB, Express.js,
               React.js, and Node.js—I develop responsive, scalable, and

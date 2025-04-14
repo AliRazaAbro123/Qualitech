@@ -1,16 +1,16 @@
-import PortfolioPage from '@/components/Portfolio/PortfolioPage'
-import React from 'react'
+import PortfolioPage from "@/components/Portfolio/PortfolioPage";
+import React from "react";
 
 export const metadata = {
-  title: "Ali Raza | Portfolio"
+  title: "Ali Stacker | Portfolio",
 };
 
 function portfolio() {
   return (
     <div>
-      <PortfolioPage/>
+      <PortfolioPage />
     </div>
-  )
+  );
 }
 
-export default portfolio
+export default portfolio;

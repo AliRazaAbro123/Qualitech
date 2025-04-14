@@ -1,37 +1,10 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import CustomCss from "@/components/CustomCss.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import logo from "../../public/assets/logo.jpg";
 import Image from "next/image";
-gsap.registerPlugin(ScrollTrigger);
 
 function AboutHome() {
-  const tl = gsap.timeline();
-
-  //  useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     // Animation on scroll
-  //     tl.from(".about p", {
-  //       y: 1000,
-  //       duration: 7,
-  //       ease: "power3.out",
-  //       scrollTrigger: {
-  //         trigger: ".about", // Trigger element
-  //         start: "top 30%", // Animation starts when the top of the element enters the viewport
-  //         // end: "top 20%", // Animation ends when the element reaches 80% of the viewport
-  //         scrub: 2, // Makes the animation follow the scroll
-  //         markers: true, // Set to true for debugging, false for production
-  //       },
-  //     });
-  //   });
-
-  //   // Cleanup on component unmount
-  //   return () => ctx.revert();
-  // }, []);
-
   return (
     <div className="w-full h-auto flex bg-[#05010fee] justify-center items-center">
       <div className="w-full h-auto py-24 flex justify-evenly items-center flex-row mobile:p-4 mobile:flex-col mobile:justify-center mobile:gap-6 wide:w-[90rem]">

@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div style={styles.container}>
       <div style={styles.spinner}></div>
-      <p style={styles.text}>Loading...</p>
+      <p style={styles.text}> Loading...</p>
     </div>
   );
 };

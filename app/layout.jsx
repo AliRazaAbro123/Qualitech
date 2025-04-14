@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Ali Raza" />
         <meta
           name="keywords"
-          content="Ali Raza, Full Stack Developer, MERN, Web Development"
+          content="Ali Stacker, Full Stack Developer, MERN, Web Development"
         />
         <meta name="robots" content="index, follow" />
 

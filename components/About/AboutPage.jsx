@@ -1,7 +1,5 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import CustomCss from "@/components/CustomCss.css";
-import gsap from "gsap";
 import Link from "next/link";
 import logo from "../../public/assets/logo.jpg";
 import Image from "next/image";
@@ -38,14 +36,14 @@ function AboutPage() {
                 transform your vision into reality? I’m just a message away!
               </span>
             </p>
-          <div className="flex items-start justify-center w-full h-auto mt-4 mb-2">
-            <Link
-              href={"/contact"}
-              className="w-auto h-auto px-8 py-2 font-semibold text-center bg-blue-700 rounded-md btn mobile:w-full mobile:py-3"
-            >
-              Contact Me <code>&gt;</code>
-            </Link>
-          </div>
+            <div className="flex items-start justify-center w-full h-auto mt-4 mb-2">
+              <Link
+                href={"/contact"}
+                className="w-auto h-auto px-8 py-2 font-semibold text-center bg-blue-700 rounded-md btn mobile:w-full mobile:py-3"
+              >
+                Contact Me <code>&gt;</code>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

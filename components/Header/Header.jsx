@@ -22,7 +22,7 @@ function NavList() {
           href={"/"}
           className={`${
             pathname === "/" ? "text-blue-700 " : ""
-          } font-semibold no-underline text-base tracking-wider`}
+          } font-semibold no-underline text-base tracking-wider hover:text-blue-700`}
         >
           Home
         </Link>
@@ -32,7 +32,7 @@ function NavList() {
           href={"/services"}
           className={`${
             pathname === "/services" ? "text-blue-700" : ""
-          } text-base tracking-wider font-semibold no-underline`}
+          } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
         >
           Services
         </Link>
@@ -42,7 +42,7 @@ function NavList() {
           href={"/portfolio"}
           className={`${
             pathname === "/portfolio" ? "text-blue-700" : ""
-          } text-base tracking-wider font-semibold no-underline`}
+          } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
         >
           Portfolio
         </Link>
@@ -52,7 +52,7 @@ function NavList() {
           href={"/about"}
           className={`${
             pathname === "/about" ? "text-blue-700" : ""
-          } text-base tracking-wider font-semibold no-underline`}
+          } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
         >
           About
         </Link>
@@ -62,7 +62,7 @@ function NavList() {
           href={"/contact"}
           className={`${
             pathname === "/contact" ? "text-blue-700" : ""
-          } text-base tracking-wider font-semibold no-underline`}
+          } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
         >
           Contact
         </Link>

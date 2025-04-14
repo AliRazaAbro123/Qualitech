@@ -1,16 +1,16 @@
-import ContactPage from '@/components/Contact/ContactPage'
-import React from 'react'
+import ContactPage from "@/components/Contact/ContactPage";
+import React from "react";
 
 export const metadata = {
-  title: "Ali Raza | Contact"
+  title: "Ali Stacker | Contact",
 };
 
 function contactMe() {
   return (
     <div>
-      <ContactPage/>
+      <ContactPage />
     </div>
-  )
+  );
 }
 
-export default contactMe
+export default contactMe;

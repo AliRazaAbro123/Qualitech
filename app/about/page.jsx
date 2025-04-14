@@ -2,13 +2,13 @@ import AboutPage from "@/components/About/AboutPage";
 import React from "react";
 
 export const metadata = {
-  title: "Ali Raza | About"
+  title: "Ali Stacker | About",
 };
 
 function aboutMe() {
   return (
     <div>
-      <AboutPage/>
+      <AboutPage />
     </div>
   );
 }
