@@ -1,42 +1,45 @@
 import React from "react";
 import CustomCss from "@/components/CustomCss.css";
 import Link from "next/link";
-import logo from "../../public/assets/logo.jpg";
+import bg from "../../public/assets/bg2.jpg";
 import Image from "next/image";
 
 function AboutHome() {
   return (
-    <div className="w-full h-auto flex bg-[#05010fee] justify-center items-center">
-      <div className="w-full h-auto py-24 flex justify-evenly items-center flex-row mobile:p-4 mobile:flex-col mobile:justify-center mobile:gap-6 wide:w-[90rem]">
+    <div className="w-full h-auto flex bg-white justify-center items-center">
+      <div className="w-full h-auto py-24 mobile:mb-8 flex justify-evenly items-center flex-row mobile:p-4 mobile:flex-col-reverse mobile:justify-center mobile:gap-6 wide:w-[90rem]">
         <div className="w-1/3 h-auto mobile:w-full">
-          <Image src={logo} width={550} alt="Home page icon" />
+          <Image src={bg} width={550} alt="Home page icon" />
         </div>
         <div className="w-[60%] mobile:w-full h-auto flex justify-center gap-4 items-start flex-col py-5 px-12 mobile:px-2 mobile:items-center">
-          <div className="w-full h-auto flex justify-center items-start flex-col gap-1 mobile:items-center">
-            <h1 className="title font-bold text-4xl tracking-wider tablet:text-3xl mobile:text-3xl">
-              About <span className="text-blue-700">Me</span>
+          <div className="w-full h-auto flex justify-center items-start flex-col gap-2 mobile:items-center">
+            <h1 className="title font-bold text-4xl tracking-wider mb-4 tablet:text-3xl mobile:text-3xl">
+              About <span className="text-blue-700">Us</span>
             </h1>
-            <h2 className="font-bold text-2xl tracking-wide tablet:text-xl mobile:text-lg">
-              FullStack Mern Web Developer!
+            <h2 className="font-semibold text-xl tracking-wide tablet:text-xl mobile:text-lg mobile:text-center">
+              We Offer Development & SQA Services
             </h2>
           </div>
           <div className="w-full h-auto flex justify-center items-start flex-col gap-3 mobile:items-center">
-            <p className="text-gray-300 text-sm leading-normal tracking-wide">
-              <span className="bg-gradient-to-r from-blue-800 to-blue-800 bg-[length:0%_100%] bg-no-repeat animate-bgFill text-white px-2">
-                With 4+ years of experience, I specialize in the MERN stack
-                (MongoDB, Express.js, React.js, Node.js)
-              </span>
-              to build responsive and scalable web applications. Passionate
-              about solving challenges, writing clean code, and staying
-              up-to-date with web development trends, I create user-centric
-              digital experiences. Let’s connect and build something amazing!
+            <p className="text-zinc-700 text-sm leading-normal tracking-wide">
+              "Your Partner in Software Development and Quality Assurance
+              Excellence", {""}
+              Let me know if anything more you need from our side
             </p>
-            <Link
-              href={"/about"}
-              className="btn bg-blue-700 w-auto h-auto py-2 text-center px-8 rounded-md font-semibold mt-6 mb-8 mobile:w-full mobile:py-3"
-            >
-              Read More <code>&gt;</code>
-            </Link>
+            <div className="w-full h-auto flex justify-between bg-zinc-300 shadow-lg items-start flex-row mobile:items-center mt-8 mobile:justify-center mobile:flex-col mobile:gap-8">
+              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>Team Members</h3>
+                <h1 className="text-xl text-blue-900 font-bold">4</h1>
+              </div>
+              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>Happy Clients</h3>
+                <h1 className="text-xl text-blue-900 font-bold">6</h1>
+              </div>
+              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>Projects Done</h3>
+                <h1 className="text-xl text-blue-900 font-bold">6</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>

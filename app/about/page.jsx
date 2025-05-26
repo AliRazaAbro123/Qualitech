@@ -2,7 +2,7 @@ import AboutPage from "@/components/About/AboutPage";
 import React from "react";
 
 export const metadata = {
-  title: "Ali Stacker | About",
+  title: "Qualitech Solutions | About",
 };
 
 function aboutMe() {

@@ -74,7 +74,7 @@ function Home() {
                 name="username"
                 id="username"
                 placeholder="Your Full Name"
-                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-600"
+                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-500 text-white"
                 value={username}
                 onChange={(event) => setUsername(event.target.value)}
                 required
@@ -84,7 +84,7 @@ function Home() {
                 name="email"
                 id="email"
                 placeholder="Your Email Address"
-                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-600"
+                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-500 text-white"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 required
@@ -95,7 +95,7 @@ function Home() {
                 name="message"
                 id="message"
                 placeholder="Your Message"
-                className="w-full h-[12rem] p-3 bg-blue-gray-900 rounded-md outline-none placeholder:text-gray-600 resize-none"
+                className="w-full h-[12rem] p-3 bg-blue-gray-900 rounded-md outline-none placeholder:text-gray-500 text-white resize-none"
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
                 required
@@ -103,7 +103,7 @@ function Home() {
             </div>
             <button
               type="submit"
-              className="w-auto h-auto px-8 py-2 mt-6 mb-4 font-semibold text-center bg-blue-700 rounded-md mobile:w-full mobile:py-3"
+              className="w-auto h-auto px-8 py-2 mt-6 mb-4 font-semibold text-center bg-blue-700 text-white rounded-md mobile:w-full mobile:py-3"
             >
               Send Message
             </button>

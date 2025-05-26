@@ -3,16 +3,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faSquareTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import fiverrLogo from "../../public/assets/fiverr.png";
+import upworkLogo from "../../public/assets/upwork.png";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loading from "@/app/loading";
-
+import Image from "next/image";
 
 function ContactPage() {
   const [username, setUsername] = useState("");
@@ -20,13 +17,12 @@ function ContactPage() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-
   const FormHandler = async (event) => {
     event.preventDefault();
     setLoading(true); // Start loading
-  
+
     const formData = { username, email, message };
-  
+
     try {
       const response = await fetch("/api/SendMail", {
         method: "POST",
@@ -35,7 +31,7 @@ function ContactPage() {
         },
         body: JSON.stringify(formData),
       });
-  
+
       if (response.ok) {
         toast.success("Your message has been sent successfully!", {
           position: "top-center",
@@ -58,21 +54,19 @@ function ContactPage() {
       setLoading(false); // Stop loading
     }
   };
-  
-  
 
   return (
     <div className="flex items-center justify-center w-full h-auto">
-      <ToastContainer /> 
+      <ToastContainer />
       {loading && <Loading />}
       <div
-      className={`w-full h-auto wide:h-screen py-6 flex justify-center items-center flex-col mobile:p-4 mobile:py-6 wide:w-[90rem] mobile:mb-2 ${
-        loading ? "blur-sm pointer-events-none" : ""
-      }`}
-    >
+        className={`w-full h-auto wide:h-screen py-6 flex justify-center items-center flex-col mobile:p-4 mobile:py-6 wide:w-[90rem] mobile:mb-2 ${
+          loading ? "blur-sm pointer-events-none" : ""
+        }`}
+      >
         <div className="flex items-center justify-center w-full h-auto">
           <h1 className="text-4xl font-bold tracking-wider title tablet:text-3xl mobile:text-3xl">
-            Contact <span className="text-blue-700">Me!</span>
+            Contact <span className="text-blue-700">Us!</span>
           </h1>
         </div>
         <div className="flex flex-col items-center justify-center w-full h-auto">
@@ -86,7 +80,7 @@ function ContactPage() {
                 name="username"
                 id="username"
                 placeholder="Your Full Name"
-                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-600"
+                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-500 text-white"
                 value={username}
                 onChange={(event) => setUsername(event.target.value)}
                 required
@@ -96,7 +90,7 @@ function ContactPage() {
                 name="email"
                 id="email"
                 placeholder="Your Email Address"
-                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-600"
+                className="w-1/2 p-3 rounded-md outline-none mobile:w-full mobile:p-4 bg-blue-gray-900 placeholder:text-gray-500 text-white"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 required
@@ -107,7 +101,7 @@ function ContactPage() {
                 name="message"
                 id="message"
                 placeholder="Your Message"
-                className="w-full h-[12rem] p-3 bg-blue-gray-900 rounded-md outline-none placeholder:text-gray-600 resize-none"
+                className="w-full h-[12rem] p-3 bg-blue-gray-900 rounded-md outline-none placeholder:text-gray-500 text-white resize-none"
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
                 required
@@ -115,42 +109,44 @@ function ContactPage() {
             </div>
             <button
               type="submit"
-              className="w-auto h-auto px-8 py-2 mt-2 font-semibold text-center bg-blue-700 rounded-md mobile:w-full mobile:py-3"
+              className="w-auto h-auto px-8 py-2 mt-2 font-semibold text-center bg-blue-700 text-white rounded-md mobile:w-full mobile:py-3"
             >
               Send Message
             </button>
           </form>
-          <div className="flex justify-center items-center gap-10 mobile:gap-10 flex-row mt-[1rem]">
+          <div className="flex justify-center items-center gap-10 mobile:gap-8 flex-row mt-[1rem]">
             {/* Important: Facebook icon with custom style */}
-            <h1 className="mr-2 text-lg font-semibold">Contact Me At :</h1>
+            <h1 className="mr-2 text-lg font-semibold">Contact Us:</h1>
+            <Link href={"#"} target="_blank">
+              <Image
+                src={fiverrLogo}
+                alt="Fiverr"
+                width={35}
+                className="bg-center bg-cover bg-no-repeat"
+              />
+            </Link>
             <Link
-              href={"https://www.facebook.com/profile.php?id=61552489011042"} target="_blank"
+              href={"https://www.linkedin.com/in/shakir-ali-767270219/"}
+              target="_blank"
             >
               <FontAwesomeIcon
-                icon={faFacebook}
-                bounce
-                size="lg"
-                style={{ color: "blue" }}
-              />
-            </Link>
-
-            {/* Explanation: Instagram icon with custom style */}
-            <Link href={"https://www.instagram.com/ud.programming/"} target="_blank">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                beat
-                style={{ color: "blue" }}
-                size="lg"
-              />
-            </Link>
-
-            {/* Explanation: LinkedIn icon with custom style */}
-            <Link href={"https://www.linkedin.com/in/ali-raza-8669a52b8/"} target="_blank">
-              <FontAwesomeIcon
                 icon={faLinkedin}
-                bounce
                 style={{ color: "blue" }}
-                size="lg"
+                size="2xl"
+                className="rounded-full"
+              />
+            </Link>
+            <Link
+              href={
+                "https://www.upwork.com/freelancers/~0113c6a538f16fbe28?mp_source=share"
+              }
+              target="_blank"
+            >
+              <Image
+                src={upworkLogo}
+                alt="Upwork"
+                width={35}
+                className="bg-center bg-cover bg-no-repeat"
               />
             </Link>
           </div>

@@ -22,7 +22,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: email,
-      to: process.env.EMAIL, // Your receiving email address
+      to: `${process.env.EMAIL}, ${process.env.SECOND_EMAIL}`,
       subject: `New message from ${username}`,
       text: message,
     };

@@ -2,7 +2,7 @@ import ServicesPage from "@/components/Services/ServicesPage";
 import React from "react";
 
 export const metadata = {
-  title: "Ali Stacker | Services",
+  title: "Qualitech Solutions | Services",
 };
 
 function services() {

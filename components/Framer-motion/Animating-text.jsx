@@ -6,20 +6,20 @@ import { motion } from "framer-motion";
 
 const AnimatedText = () => {
   const phrases = [
-    "Hello! It's Me",
-    "Welcome to My Portfolio",
-    "FullStack Mern Engineer",
-    "Passionate Coder",
-    "Creative Thinker",
-    "User Experience Advocate",
-    "Frontend Guru",
-    "Backend Architect",
-    "Responsive Design Expert",
-    "UI/UX Innovator",
-    "Scalable App Creator",
-    "Modern Web Builder",
-    "React Wizard",
-    "Node.js Developer",
+    "Quality Assurance Services",
+    "Manual Testing Specialist",
+    "Automation Testing Expert",
+    "Quality Assurance",
+    "Test Automation",
+    "Software Testing",
+    "Development Services",
+    "Web App Development",
+    "Website Maintenance",
+    "Front-end Development",
+    "Back-end Development",
+    "Node.js Engineer",
+    "React.js Engineer",
+    "Next.js Engineer",
   ];
 
   const [currentText, setCurrentText] = useState(0);
@@ -40,7 +40,7 @@ const AnimatedText = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 2.5 }}
     >
-      <h1 className="text-3xl mobile:text-2xl">{phrases[currentText]}</h1>
+      <h1 className="text-2xl mobile:text-2xl">{phrases[currentText]}</h1>
     </motion.div>
   );
 };
