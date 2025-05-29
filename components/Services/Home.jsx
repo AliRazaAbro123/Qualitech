@@ -30,7 +30,7 @@ function Home() {
                 className="tablet:w-20 mobile:w-16 absolute top-[-2.5rem] mobile:top-[-2.3rem] left-[2rem]"
                 alt="Code"
               />
-              <h1 className="tablet:text-base text-lg font-bold tablet:font-semibold mt-6">
+              <h1 className="tablet:text-base text-lg font-bold tablet:font-semibold mt-6 text-blue-700">
                 Fullstack Development
               </h1>
               <p className="text-sm text-zinc-600">
@@ -48,7 +48,7 @@ function Home() {
                 className="tablet:w-20 mobile:w-16 absolute top-[-2.5rem] mobile:top-[-2.3rem] left-[2rem]"
                 alt="browser"
               />
-              <h1 className="tablet:text-base text-lg font-bold tablet:font-semibold mt-6">
+              <h1 className="tablet:text-base text-lg font-bold tablet:font-semibold mt-6 text-blue-700">
                 SQA Engineering
               </h1>
               <p className="text-sm text-zinc-600">
@@ -67,7 +67,7 @@ function Home() {
                 className="tablet:w-20 mobile:w-16 absolute top-[-2.5rem] mobile:top-[-2.3rem] left-[2rem]"
                 alt="database"
               />
-              <h1 className="tablet:text-base text-lg font-bold tablet:font-semibold mt-6">
+              <h1 className="tablet:text-base text-lg font-bold tablet:font-semibold mt-6 text-blue-700">
                 Software Testing
               </h1>
               <p className="text-sm text-zinc-600">
@@ -77,12 +77,6 @@ function Home() {
               </p>
             </div>
           </div>
-          <Link
-            href={"/services"}
-            className="btn bg-blue-700 text-white w-auto h-auto py-2 text-center px-8 rounded-md font-semibold mt-6 mobile:w-full mobile:py-3"
-          >
-          Services! <code>&gt;</code>
-          </Link>
         </div>
       </div>
     </div>

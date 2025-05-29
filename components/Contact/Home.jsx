@@ -60,7 +60,7 @@ function Home() {
     >
         <div className="flex items-center justify-center w-full h-auto">
           <h1 className="text-4xl font-bold tracking-wider title tablet:text-3xl mobile:text-3xl">
-            Contact <span className="text-blue-700">Me!</span>
+            Contact <span className="text-blue-700">Us!</span>
           </h1>
         </div>
         <div className="flex items-center justify-center w-full h-auto">

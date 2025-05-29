@@ -9,6 +9,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import logo from "../../public/assets/logo.png";
 
 function NavList() {
   const pathname = usePathname();
@@ -86,9 +88,11 @@ function Header() {
       <div className="flex items-center justify-between text-black">
         <Typography
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 text-3xl font-bold tracking-wider"
+          className="mr-4 cursor-pointer text-3xl font-bold tracking-wider"
         >
-          <Link href={"/"}>Qualitech</Link>
+          <Link href={"/"} className="flex justify-center items-center flex-row">
+            <Image src={logo} alt="Logo" width={50} height={50}/>Qualitech
+          </Link>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
