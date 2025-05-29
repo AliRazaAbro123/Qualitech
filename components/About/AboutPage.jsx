@@ -7,7 +7,7 @@ import Image from "next/image";
 function AboutHome() {
   return (
     <div className="w-full h-auto flex bg-white justify-center items-center">
-      <div className="w-full h-auto py-24 flex justify-evenly items-center flex-row mobile:p-4 mobile:flex-col mobile:justify-center mobile:gap-6 wide:w-[90rem]">
+      <div className="w-full h-auto py-24 flex justify-evenly items-center flex-row mobile:p-4 mobile:flex-col mobile:justify-center mobile:gap-6 wide:w-[90rem] wide:h-screen">
         <div className="w-1/3 h-auto mobile:w-full">
           <Image src={bg} width={550} alt="Home page icon" />
         </div>

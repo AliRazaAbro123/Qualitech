@@ -26,22 +26,22 @@ function NavList() {
       </Typography>
       <Typography as="li">
         <Link
-          href={"/services"}
-          className={`${
-            pathname === "/services" ? "text-blue-700" : ""
-          } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
-        >
-          Our Services
-        </Link>
-      </Typography>
-      <Typography as="li">
-        <Link
           href={"/about"}
           className={`${
             pathname === "/about" ? "text-blue-700" : ""
           } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
         >
           About Us
+        </Link>
+      </Typography>
+      <Typography as="li">
+        <Link
+          href={"/services"}
+          className={`${
+            pathname === "/services" ? "text-blue-700" : ""
+          } text-base tracking-wider font-semibold no-underline hover:text-blue-700`}
+        >
+          Our Services
         </Link>
       </Typography>
       <Typography as="li">
@@ -88,9 +88,7 @@ function Header() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 text-3xl font-bold tracking-wider"
         >
-          <Link href={"/"}>
-            Qualitech
-          </Link>
+          <Link href={"/"}>Qualitech</Link>
         </Typography>
         <div className="hidden lg:block">
           <NavList />

@@ -14,7 +14,7 @@ import Link from "next/link";
 function Home() {
   return (
     <div className="w-full h-auto flex justify-center bg-white items-center">
-      <div className="w-full h-auto flex justify-center gap-24 py-12 items-center flex-col  mobile:p-4 wide:w-[90rem]">
+      <div className="w-full h-auto flex justify-center gap-24 py-12 items-center flex-col  mobile:p-4 wide:w-[90rem] wide:h-screen">
         <div className="w-full h-auto flex justify-center items-center">
           <h1 className="title font-bold text-4xl tracking-wider tablet:text-3xl mobile:text-3xl">
             Our <span className="text-blue-700">Services</span>
