@@ -24,7 +24,7 @@ function home() {
         <div className="w-[60%] mobile:w-full h-auto flex justify-center gap-8 mobile:gap-10 items-start flex-col py-8 px-12 mobile:px-2 mb-8">
           <div className="flex flex-col items-start justify-center w-full h-auto gap-2">
             <h1 className="text-5xl font-bold mobile:text-4xl">
-              Qualitech <span className="text-blue-700">Solutions</span>
+              Qualitech <span className="text-blue-700">Solutions.</span>
             </h1>
 
             <AnimatedText />
