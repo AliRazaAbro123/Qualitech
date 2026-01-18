@@ -14,7 +14,7 @@ function AboutHome() {
         <div className="w-[60%] mobile:w-full h-auto flex justify-center gap-4 items-start flex-col py-5 px-12 mobile:px-2 mobile:items-center">
           <div className="w-full h-auto flex justify-center items-start flex-col gap-2 mobile:items-center">
             <h1 className="title font-bold text-4xl tracking-wider mb-4 tablet:text-3xl mobile:text-3xl">
-              About <span className="text-blue-700">Us</span>
+              About <span className="text-blue-700">Us</span> ✨
             </h1>
             <h2 className="font-semibold text-xl tracking-wide tablet:text-xl mobile:text-lg mobile:text-center">
               We Offer Development & SQA Services
@@ -27,17 +27,21 @@ function AboutHome() {
               Let me know if anything more you need from our side
             </p>
             <div className="w-full h-auto flex justify-between bg-white py-4 shadow-lg items-start flex-row mobile:items-center mt-8 mobile:justify-center mobile:flex-col mobile:gap-8 mobile:py-8">
-              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+              <div className="w-[20%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
                 <h3>Team Members</h3>
-                <h1 className="text-xl text-blue-900 font-bold">4</h1>
+                <h1 className="text-xl text-blue-900 font-bold">6</h1>
               </div>
-              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+              <div className="w-[20%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
                 <h3>Happy Clients</h3>
-                <h1 className="text-xl text-blue-900 font-bold">6</h1>
+                <h1 className="text-xl text-blue-900 font-bold">100%</h1>
               </div>
-              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
-                <h3>Projects Done</h3>
-                <h1 className="text-xl text-blue-900 font-bold">6</h1>
+              <div className="w-[25%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>SQA Projects Done</h3>
+                <h1 className="text-xl text-blue-900 font-bold">52+</h1>
+              </div>
+              <div className="w-[35%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>Development Projects Done</h3>
+                <h1 className="text-xl text-blue-900 font-bold">20+</h1>
               </div>
             </div>
           </div>

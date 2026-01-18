@@ -25,7 +25,7 @@ function TeamHome() {
             </h3>
             <h1 className="text-xl">Shakir Solangi</h1>
           </div>
-          <div className="w-[20%] min-h-36 flex flex-col items-center justify-between gap-2 mobile:justify-center mobile:w-full">
+          <div className="w-[20%] min-h-28 flex flex-col items-center justify-between gap-2 mobile:justify-center mobile:w-full">
             <Image
               src={ali}
               alt="FullStack Mern Developer"
@@ -34,7 +34,8 @@ function TeamHome() {
               className="mobile:w-3/4"
             />
             <h3 className="text-gray-700 text-sm mobile:text-lg">
-              FullStack Mern Developer
+              Senior FullStack Mern Web Developer, <br />
+              SQA Engineer & Graphics Designer
             </h3>
             <h1 className="text-xl">Ali Raza</h1>
           </div>
@@ -47,9 +48,9 @@ function TeamHome() {
               className="mobile:w-3/4"
             />
             <h3 className="text-gray-700 text-sm mobile:text-lg">
-              FullStack Developer
+              Senior SQA Engineer
             </h3>
-            <h1 className="text-xl">Sami Solangi</h1>
+            <h1 className="text-xl">Samiullah Solangi</h1>
           </div>
         </div>
         <div className="w-full h-auto flex justify-center flex-row gap-8 mobile:flex-col">
@@ -61,7 +62,7 @@ function TeamHome() {
               height={100}
               className="mobile:w-3/4"
             />
-            <h3 className="text-gray-700 text-sm mobile:text-lg">SQA Engineer</h3>
+            <h3 className="text-gray-700 text-sm mobile:text-lg">Senior SQA Engineer</h3>
             <h1 className="text-xl">Aqib Ali</h1>
           </div>
           <div className="w-[20%] min-h-36 flex flex-col items-center justify-between gap-2 mobile:justify-center mobile:w-full">
@@ -72,8 +73,8 @@ function TeamHome() {
               height={120}
               className="mobile:w-3/4"
             />
-            <h3 className="text-gray-700 text-sm mobile:text-lg">SQA Engineer</h3>
-            <h1 className="text-xl">Papu Solangi</h1>
+            <h3 className="text-gray-700 text-sm mobile:text-lg">Senior SQA Engineer</h3>
+            <h1 className="text-xl">Yasir Solangi</h1>
           </div>
         </div>
       </div>

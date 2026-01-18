@@ -105,7 +105,7 @@ function Home() {
               type="submit"
               className="w-auto h-auto px-8 py-2 mt-6 mb-4 font-semibold text-center bg-blue-700 text-white rounded-md mobile:w-full mobile:py-3"
             >
-              Send Message
+              Send Message ✅
             </button>
           </form>
         </div>

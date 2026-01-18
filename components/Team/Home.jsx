@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ali from "../../public/assets/ali.jpg";
+import ali from "../../public/assets/ali.png";
 import yasir from "../../public/assets/yasir.jpg";
 import papu from "../../public/assets/papu.jpg";
 import aqib from "../../public/assets/aqib.jpg";
@@ -10,9 +10,9 @@ function Home() {
   return (
     <div className="flex items-center justify-center w-full h-auto">
       <div className="w-full h-auto flex justify-center flex-col gap-12 mobile:gap-8 py-20 items-center mobile:p-4 mobile:py-16 wide:w-[90rem]">
-        <h1 className="text-4xl font-semibold mobile:mb-8">Our <span className="text-blue-700">Team</span></h1>
+        <h1 className="text-4xl font-semibold mobile:mb-8">Meet Our <span className="text-blue-700">Team</span> ✨</h1>
         <div className="w-full h-auto flex justify-center flex-row gap-8 mobile:flex-col">
-          <div className="w-[20%] min-h-32 flex flex-col items-center justify-evenly gap-2 mobile:justify-center mobile:w-full">
+          <div className="w-[20%] min-h-32 flex flex-col items-center justify-evenly gap-1 mobile:justify-center mobile:w-full">
             <Image
               src={yasir}
               alt="CEO & Founder"
@@ -33,12 +33,13 @@ function Home() {
               height={100}
               className="mobile:w-3/4"
             />
-            <h3 className="text-gray-700 text-sm mobile:text-lg">
-              FullStack Mern Developer
+            <h3 className="text-gray-700 text-sm mobile:text-lg leading-[0.9]">
+              Senior FullStack Mern Web Developer, <br />
+              SQA Engineer, Graphic Designer
             </h3>
             <h1 className="text-xl">Ali Raza</h1>
           </div>
-          <div className="w-[20%] min-h-36 flex flex-col items-center justify-between gap-2 mobile:justify-center mobile:w-full">
+          <div className="w-[20%] min-h-36 flex flex-col items-center justify-between gap-1 mobile:justify-center mobile:w-full">
             <Image
               src={sami}
               alt="SQA Tester"
@@ -47,9 +48,9 @@ function Home() {
               className="mobile:w-3/4"
             />
             <h3 className="text-gray-700 text-sm mobile:text-lg">
-              FullStack Developer
+              Senior SQA Engineer
             </h3>
-            <h1 className="text-xl">Sami Solangi</h1>
+            <h1 className="text-xl">Samiullah Solangi</h1>
           </div>
         </div>
         <div className="w-full h-auto flex justify-center flex-row gap-8 mobile:flex-col">
@@ -61,7 +62,7 @@ function Home() {
               height={100}
               className="mobile:w-3/4"
             />
-            <h3 className="text-gray-700 text-sm mobile:text-lg">SQA Engineer</h3>
+            <h3 className="text-gray-700 text-sm mobile:text-lg">Senior SQA Engineer</h3>
             <h1 className="text-xl">Aqib Ali</h1>
           </div>
           <div className="w-[20%] min-h-36 flex flex-col items-center justify-between gap-2 mobile:justify-center mobile:w-full">
@@ -72,8 +73,8 @@ function Home() {
               height={120}
               className="mobile:w-3/4"
             />
-            <h3 className="text-gray-700 text-sm mobile:text-lg">SQA Engineer</h3>
-            <h1 className="text-xl">Papu Solangi</h1>
+            <h3 className="text-gray-700 text-sm mobile:text-lg">Senior SQA Engineer</h3>
+            <h1 className="text-xl">Yasir Solangi</h1>
           </div>
         </div>
       </div>

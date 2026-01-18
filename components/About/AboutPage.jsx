@@ -27,17 +27,21 @@ function AboutHome() {
               Let me know if anything more you need from our side
             </p>
             <div className="w-full h-auto flex justify-between bg-white py-4 shadow-lg items-start flex-row mobile:items-center mt-8 mobile:justify-center mobile:flex-col mobile:gap-8 mobile:py-8">
-              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+              <div className="w-[25%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
                 <h3>Team Members</h3>
-                <h1 className="text-xl text-blue-900 font-bold">4</h1>
+                <h1 className="text-xl text-blue-900 font-bold">6</h1>
               </div>
-              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+              <div className="w-[25%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
                 <h3>Happy Clients</h3>
-                <h1 className="text-xl text-blue-900 font-bold">6</h1>
+                <h1 className="text-xl text-blue-900 font-bold">100%</h1>
               </div>
-              <div className="w-[30%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
-                <h3>Projects Done</h3>
-                <h1 className="text-xl text-blue-900 font-bold">6</h1>
+              <div className="w-[25%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>SQA Projects Done</h3>
+                <h1 className="text-xl text-blue-900 font-bold">52+</h1>
+              </div>
+              <div className="w-[25%] mobile:w-full h-auto flex justify-center items-center flex-col gap-1 mobile:gap-2">
+                <h3>Development Projects Done</h3>
+                <h1 className="text-xl text-blue-900 font-bold">20+</h1>
               </div>
             </div>
           </div>
