@@ -11,6 +11,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import AnimatedText from "../Framer-motion/Animating-text";
 import Link from "next/link";
 library.add(faLinkedin);
+// btns added for more creativity
 
 function home() {
   return (
