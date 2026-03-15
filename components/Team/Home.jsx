@@ -29,7 +29,7 @@ function Home() {
                 alt="CEO & Founder"
                 width={130}
                 height={140}
-                className="mobile:w-3/4 border-4 border-blue-800 rounded-xl p-1"
+                className="mobile:w-3/4"
               />
               <h3 className="text-gray-700 text-sm mobile:text-lg group-hover:opacity-0">
                 CEO & Founder
@@ -75,7 +75,7 @@ function Home() {
                 alt="Ali Raza"
                 width={110}
                 height={100}
-                className="mobile:w-3/4 border-4 border-blue-800 rounded-xl p-1"
+                className="mobile:w-3/4"
               />
               <h3 className="text-gray-700 text-[12px] mobile:text-lg group-hover:opacity-0 leading-[14px]">
                 FullStack MERN Web<br />
@@ -120,7 +120,7 @@ function Home() {
                 alt="Samiullah Solangi"
                 width={120}
                 height={140}
-                className="mobile:w-3/4 border-4 border-blue-800 rounded-xl p-1"
+                className="mobile:w-3/4"
               />
               <h3 className="text-gray-700 text-[12px] mobile:text-lg group-hover:opacity-0 leading-[14px]">
                 Frontend Web Developer <br />& SQA Engineer
@@ -166,7 +166,7 @@ function Home() {
                 alt="Yasir Solangi"
                 width={120}
                 height={140}
-                className="mobile:w-3/4 border-4 border-blue-800 rounded-xl p-1"
+                className="mobile:w-3/4"
               />
               <h3 className="text-gray-700 text-sm mobile:text-lg group-hover:opacity-0">
                 Senior SQA Engineer
@@ -209,7 +209,7 @@ function Home() {
                 alt="Aaqib Ali"
                 width={120}
                 height={120}
-                className="mobile:w-3/4 border-4 border-blue-800 rounded-xl p-1"
+                className="mobile:w-3/4"
               />
               <h3 className="text-gray-700 text-[12px] mobile:text-lg group-hover:opacity-0 leading-[14px]">
                 Senior SQA Engineer
